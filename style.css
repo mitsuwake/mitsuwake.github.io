@@ -1,0 +1,26 @@
+/* みつわけハニカムのサイト。色はアプリの Theme.swift と同じ値（暗い琥珀の地に蜂蜜色）。 */
+:root { --bg:#21160d; --card:#2e2014; --line:#6e4e2e; --text:#f7e9cf; --muted:#bfa684; --accent:#ffd45c; --honey:#f4a814; --th:#4a3421; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); line-height:1.8; font-size:16px;
+  font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",-apple-system,BlinkMacSystemFont,sans-serif; }
+main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+.card { background:var(--card); border:1.5px solid var(--line); border-radius:16px; padding:24px 20px;
+  box-shadow:inset 0 1px 0 rgba(255,212,92,.08), 0 6px 18px rgba(0,0,0,.35); }
+h1 { font-size:1.5rem; margin:0 0 4px; color:var(--accent); }
+.app { color:var(--muted); margin:0 0 24px; }
+h2 { font-size:1.1rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); color:var(--accent); }
+ul { padding-left:1.4em; }
+li::marker { color:var(--honey); }
+a { color:var(--accent); word-break:break-all; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; margin-bottom:12px; }
+th, td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+th { background:var(--th); white-space:nowrap; }
+.table-wrap { overflow-x:auto; }
+.dates { color:var(--muted); font-size:.9rem; margin-top:32px; }
+.back { display:inline-block; margin-bottom:16px; }
+.hero { text-align:center; }
+.hero img { width:128px; height:128px; border-radius:28px; box-shadow:0 6px 16px rgba(0,0,0,.45); }
+.hero h1 { font-size:2rem; margin:16px 0 0; letter-spacing:.04em; }
+.hero .sub { color:var(--muted); margin:0 0 16px; }
+.drip { height:10px; margin:0 auto 20px; width:120px; border-radius:0 0 60px 60px; background:linear-gradient(var(--honey), var(--accent)); opacity:.9; }
